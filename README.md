@@ -111,5 +111,13 @@ Checking Design Exchange Format
 Seeing Die area
 ![image](https://github.com/user-attachments/assets/c7163036-c115-42c7-8084-6503f75d4173)
 
+Steps to Open Magic
+```
+magic -T /home/vsduser//Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &
+```
+
+Launching Magic
+![image](https://github.com/user-attachments/assets/4d647c9c-c1de-43ca-abd7-2b8d310b08d9)
+
 
 </details>
