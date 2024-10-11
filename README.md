@@ -1,6 +1,8 @@
 # Digital VLSI SoC design and planning
 ### Day-1 
 #### Inception of open source EDA, OpenLANE and Sky130 PDK
+![image](https://github.com/user-attachments/assets/d20377f7-da11-44fb-9033-7d7776f122eb)
+
 <details>
 <summary> Theory </summary>
 <br>
