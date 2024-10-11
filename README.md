@@ -41,10 +41,27 @@ Linux Commands for Opening OpenLANE
 ```
 cd work/tools/openlane_working_dir/openlane
 
-```
-
-```
 ./flow.tcl -interactive
-```
 
+package require openlane 0.9
+
+prep -design picorv32a
+
+run_synthesis
+```
+Running Synthesis
+
+![image](https://github.com/user-attachments/assets/9d276fb0-a1ab-4c92-ac85-e2a5c98cc319)
+
+![image](https://github.com/user-attachments/assets/5a8037d3-45ef-4f76-842f-6dbf16277edf)
+
+Number of D Flip Flop = 1613
+Total number of cells = 14876
+
+Calculating Flop ratio = no.of d-flipflop/total cells
+```
+Flop ratio = 1613/14876
+Flop ratio = 0.108429
+```
+%of D Flip Flops in the area = 10.8429 %
 </details>
