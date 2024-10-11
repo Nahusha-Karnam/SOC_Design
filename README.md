@@ -72,7 +72,7 @@ Flop ratio = 0.108429
 ### Day-2
 #### Floor Planning
 <details>
-<summary> Theory </summary>
+<summary> Theory Session-1 </summary>
 
 ![image](https://github.com/user-attachments/assets/750b33e2-0bd8-4be1-8022-0857c44d4c01)
 Understanding Utilization factor and aspect ratio
@@ -95,7 +95,7 @@ Concept of Pin Placement and lowering resistance with higher width
 </details>
 
 <details>
-<summary> Lab </summary>
+<summary> Lab Session-1 </summary>
 Floor Planning
   
 ```
