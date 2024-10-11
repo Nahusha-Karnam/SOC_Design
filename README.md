@@ -65,3 +65,13 @@ Flop ratio = 0.108429
 ```
 %of D Flip Flops in the area = 10.8429 %
 </details>
+
+
+### Day-2
+#### Floor Planning
+<details>
+<summary> Theory </summary>
+
+![image](https://github.com/user-attachments/assets/750b33e2-0bd8-4be1-8022-0857c44d4c01)
+
+</details>
