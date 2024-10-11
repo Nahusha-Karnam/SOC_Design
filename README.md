@@ -121,3 +121,13 @@ Launching Magic
 
 
 </details>
+
+
+<details>
+<summary> Theory Session-2 </summary>
+  
+![image](https://github.com/user-attachments/assets/4cfa018d-9a10-4c1e-83fb-05a3524f86c3)
+Understanding Library cells and Cell shapes
+
+
+</details>
