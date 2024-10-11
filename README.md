@@ -37,13 +37,14 @@ Understanding Antenna rules violation
 <summary> Lab </summary>
 <br>
 Linux Commands for Opening OpenLANE
+
 ```
 cd work/tools/openlane_working_dir/openlane
 
 ```
+
 ```
 ./flow.tcl -interactive
-
 ```
 
 </details>
