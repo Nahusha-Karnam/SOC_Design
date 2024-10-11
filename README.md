@@ -1,4 +1,4 @@
-# Digital VLSI SoC design and planning
+![image](https://github.com/user-attachments/assets/2c511325-7564-44c5-aa6f-7aade0e50f99)# Digital VLSI SoC design and planning
 ### Day-1 
 #### Inception of open source EDA, OpenLANE and Sky130 PDK
 <details>
@@ -43,6 +43,8 @@ cd work/tools/openlane_working_dir/openlane
 
 ./flow.tcl -interactive
 
+docker
+
 package require openlane 0.9
 
 prep -design picorv32a
@@ -73,5 +75,41 @@ Flop ratio = 0.108429
 <summary> Theory </summary>
 
 ![image](https://github.com/user-attachments/assets/750b33e2-0bd8-4be1-8022-0857c44d4c01)
+Understanding Utilization factor and aspect ratio
+
+![image](https://github.com/user-attachments/assets/2c372b15-e183-461c-a271-e0a23a74e633)
+Making and using custom blocks or ready foundry IP blocks
+
+![image](https://github.com/user-attachments/assets/7df77654-a011-45a3-9091-ddcc69f54cb8)
+Understanding Noise Margin
+
+![image](https://github.com/user-attachments/assets/4b264b5a-39d8-4e2d-8b2d-0239f34973c0)
+Concept and Purpose of Decoupling capacitors
+
+![image](https://github.com/user-attachments/assets/a3b4e2b1-c110-446f-8925-139b1f9f4b83)
+Concept of Power Planning and it's purpose
+Concept of Power mesh
+
+![image](https://github.com/user-attachments/assets/894330ee-cf16-468f-b836-e29df4498b12)
+Concept of Pin Placement and lowering resistance with higher width
+</details>
+
+<details>
+<summary> Lab </summary>
+Floor Planning
+  
+```
+run_floorplan
+```
+![image](https://github.com/user-attachments/assets/ff026aa5-2eed-439d-832e-13b3a6dc0219)
+
+![image](https://github.com/user-attachments/assets/4198717a-6594-4f34-8786-64291596f23e)
+
+Checking Design Exchange Format
+![image](https://github.com/user-attachments/assets/460107d7-99f2-437b-bea4-79f4460615a8)
+
+Seeing Die area
+![image](https://github.com/user-attachments/assets/c7163036-c115-42c7-8084-6503f75d4173)
+
 
 </details>
