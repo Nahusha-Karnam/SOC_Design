@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/2c511325-7564-44c5-aa6f-7aade0e50f99)# Digital VLSI SoC design and planning
+# Digital VLSI SoC design and planning
 ### Day-1 
 #### Inception of open source EDA, OpenLANE and Sky130 PDK
 <details>
