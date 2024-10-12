@@ -159,4 +159,9 @@ Running Magic
   
 ![image](https://github.com/user-attachments/assets/7fed6fe6-f8ff-4cfb-aa54-8026eb3ff437)
 Understanding Cell design flow and Foundry rules
+
+![image](https://github.com/user-attachments/assets/fa5f3d79-7513-4f1f-89ba-35d961e459a1)
+Understanding SPICE Parameters
+
+
 </details>
