@@ -163,5 +163,7 @@ Understanding Cell design flow and Foundry rules
 ![image](https://github.com/user-attachments/assets/fa5f3d79-7513-4f1f-89ba-35d961e459a1)
 Understanding SPICE Parameters
 
+![image](https://github.com/user-attachments/assets/ae1807d2-7310-44ca-afa6-e6c86b796f9a)
+Understanding User defined specifications
 
 </details>
