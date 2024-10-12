@@ -172,4 +172,10 @@ Understanding cicuit design and layout design
 ![image](https://github.com/user-attachments/assets/ae78bab2-b992-4efd-9896-d20bdac1eb33)
 Understanding Characterization flow
 
+![image](https://github.com/user-attachments/assets/25004281-7f45-4aa3-879e-f8c7adc8d9f8)
+Understanding Timing Characterization
+
+![image](https://github.com/user-attachments/assets/f6c7df5f-cb94-4209-9aa2-7ac2b1178224)
+Understanding propogation delay
+
 </details>
