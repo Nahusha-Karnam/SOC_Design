@@ -166,4 +166,10 @@ Understanding SPICE Parameters
 ![image](https://github.com/user-attachments/assets/ae1807d2-7310-44ca-afa6-e6c86b796f9a)
 Understanding User defined specifications
 
+![image](https://github.com/user-attachments/assets/a1f01b94-49b2-4971-b973-ed41b9bacfaf)
+Understanding cicuit design and layout design
+
+![image](https://github.com/user-attachments/assets/ae78bab2-b992-4efd-9896-d20bdac1eb33)
+Understanding Characterization flow
+
 </details>
