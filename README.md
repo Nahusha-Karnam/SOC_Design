@@ -129,5 +129,29 @@ Launching Magic
 ![image](https://github.com/user-attachments/assets/4cfa018d-9a10-4c1e-83fb-05a3524f86c3)
 Understanding Library cells and Cell shapes
 
+![image](https://github.com/user-attachments/assets/60f461f7-f91c-4a06-959b-126bc56a3a06)
+Converting netlist to actual advanced floor plan design
 
+
+</details>
+
+<details>
+<summary> Lab Session-2 </summary>
+
+``` 
+run_placement
+```
+![image](https://github.com/user-attachments/assets/0e4de76b-527a-45f0-801b-21a44ac3f1a8)
+
+```
+magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &
+
+```
+Running Magic
+![image](https://github.com/user-attachments/assets/e33600b4-13a6-4ea1-a0c9-47ef40697a07)
+
+![image](https://github.com/user-attachments/assets/91b2752d-9a8a-46b1-9f6e-7f4fbceb3fec)
+
+
+  
 </details>
