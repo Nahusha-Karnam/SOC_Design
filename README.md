@@ -151,7 +151,12 @@ Running Magic
 ![image](https://github.com/user-attachments/assets/e33600b4-13a6-4ea1-a0c9-47ef40697a07)
 
 ![image](https://github.com/user-attachments/assets/91b2752d-9a8a-46b1-9f6e-7f4fbceb3fec)
-
-
   
+</details>
+
+<details>
+<summary> Theory Session-3</summary>
+  
+![image](https://github.com/user-attachments/assets/7fed6fe6-f8ff-4cfb-aa54-8026eb3ff437)
+Understanding Cell design flow and Foundry rules
 </details>
