@@ -181,7 +181,30 @@ Understanding propogation delay
 </details>
 ### Day-3
 #### Library cell design
+<detials>
+<summary> Theory </summary>
+
+![image](https://github.com/user-attachments/assets/04af8bbb-cb1e-4632-87e2-50ff73941243)
+Understanding SPICE Deck specification
+
+![image](https://github.com/user-attachments/assets/d6c54b19-6f57-403b-ad0a-139c0d505d9b)
+Understanding SPICE Deck simulation
+
+![image](https://github.com/user-attachments/assets/4fca8092-b044-4633-9520-da73e072bab7)
+Understanding Delay calculation
+</detials>
 <details>
 <summary> Lab </summary>
+
+```
+git clone https://github.com/nickson-jose/vsdstdcelldesign
+```
+
+```
+magic -T sky130A.tech sky130_inv.mag &
+```
+
+![image](https://github.com/user-attachments/assets/e9cb96fb-ff1e-41d3-8d49-cab2f9754f42)
+Cloned Inverter
 
 </details>
