@@ -210,4 +210,10 @@ magic -T sky130A.tech sky130_inv.mag &
 ![image](https://github.com/user-attachments/assets/e9cb96fb-ff1e-41d3-8d49-cab2f9754f42)
 Cloned Inverter
 
+Extracted the SPICE file
+
+![image](https://github.com/user-attachments/assets/7cb6c3bc-1e53-4a0f-be3b-4c6c37f6a890)
+
+![image](https://github.com/user-attachments/assets/1742c6c1-b841-47da-9c3a-7ecd11d2b911)
+
 </details>
