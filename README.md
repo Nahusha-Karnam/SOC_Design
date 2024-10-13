@@ -212,6 +212,17 @@ Cloned Inverter
 
 Extracted the SPICE file
 
+```
+extract all
+```
+
+```
+ext2spice cthresh 0 rthresh 0
+```
+
+```
+ext2spice
+```
 ![image](https://github.com/user-attachments/assets/7cb6c3bc-1e53-4a0f-be3b-4c6c37f6a890)
 
 ![image](https://github.com/user-attachments/assets/1742c6c1-b841-47da-9c3a-7ecd11d2b911)
