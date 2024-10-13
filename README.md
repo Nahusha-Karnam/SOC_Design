@@ -181,7 +181,7 @@ Understanding propogation delay
 </details>
 ### Day-3
 #### Library cell design
-<detials>
+<details>
 <summary> Theory </summary>
 
 ![image](https://github.com/user-attachments/assets/04af8bbb-cb1e-4632-87e2-50ff73941243)
@@ -192,7 +192,8 @@ Understanding SPICE Deck simulation
 
 ![image](https://github.com/user-attachments/assets/4fca8092-b044-4633-9520-da73e072bab7)
 Understanding Delay calculation
-</detials>
+</details>
+
 <details>
 <summary> Lab </summary>
 
