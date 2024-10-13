@@ -179,3 +179,9 @@ Understanding Timing Characterization
 Understanding propogation delay
 
 </details>
+### Day-3
+#### Library cell design
+<details>
+<summary> Lab </summary>
+
+</details>
