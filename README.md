@@ -244,7 +244,9 @@ Defining ngspice specification
 ```
 plot y vs time a
 ```
-![image](https://github.com/user-attachments/assets/7c322369-ba91-4836-be9d-af4459df3ecb)
+
+![image](https://github.com/user-attachments/assets/7d1a48c3-13e5-4fd4-b118-7d1b6e9ee6af)
+
 
 Rise Time = (2.24508-2.182) = 0.06308
 Fall Time = (2.20917-2.1511) = 0.05806
