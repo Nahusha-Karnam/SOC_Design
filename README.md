@@ -236,7 +236,7 @@ ngspice sky130_inv.spice
 
 ```
 
-![image](https://github.com/user-attachments/assets/ad92ea7a-6488-459b-8b48-74754de682bb)
+![image](https://github.com/user-attachments/assets/a89e53af-a35a-478b-8d80-47d2c797ed43)
 Defining ngspice specification
 
 ![image](https://github.com/user-attachments/assets/30251f60-b0ba-47d1-a518-602c8943fc88)
@@ -244,5 +244,9 @@ Defining ngspice specification
 ```
 plot y vs time a
 ```
+![image](https://github.com/user-attachments/assets/7c322369-ba91-4836-be9d-af4459df3ecb)
+
+Rise Time = (2.24508-2.182) = 0.06308
+Fall Time = (2.20917-2.1511) = 0.05806
 
 </details>
