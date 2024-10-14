@@ -227,4 +227,22 @@ ext2spice
 
 ![image](https://github.com/user-attachments/assets/1742c6c1-b841-47da-9c3a-7ecd11d2b911)
 
+```
+gedit sky130_inv.spice
+```
+
+```
+ngspice sky130_inv.spice
+
+```
+
+![image](https://github.com/user-attachments/assets/ad92ea7a-6488-459b-8b48-74754de682bb)
+Defining ngspice specification
+
+![image](https://github.com/user-attachments/assets/30251f60-b0ba-47d1-a518-602c8943fc88)
+
+```
+plot y vs time a
+```
+
 </details>
