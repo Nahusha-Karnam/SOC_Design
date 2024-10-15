@@ -251,4 +251,86 @@ plot y vs time a
 Rise Time = (2.24508-2.182) = 0.06308
 Fall Time = (2.20917-2.1511) = 0.05806
 
+![image](https://github.com/user-attachments/assets/b04d2bcc-d054-483a-9d03-f7cb473a0671)
+Opening Magic in better graphics
+
+```
+cd
+```
+
+```
+wget http://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz
+```
+
+```
+tar xfz drc_tests.tgz
+```
+
+```
+cd drc_tests
+```
+
+```
+ls -al
+```
+
+```
+gvim .magicrc
+```
+
+```
+magic -d XR &
+```
+
+![image](https://github.com/user-attachments/assets/11c00987-9ce3-4243-bac6-4cd00ccbd0c4)
+
+
+</details>
+
+<details>
+<Summary> Day 4 </Summary>
+
+```
+cd Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign
+```
+
+```
+magic -T sky130A.tech sky130_inv.mag &
+```
+
+In tikicon window
+```
+help grid
+```
+
+```
+grid 0.46um 0.34um 0.23um 0.17um
+```
+
+![image](https://github.com/user-attachments/assets/16ff1a7c-6424-4fac-98e4-0edf984244bf)
+
+
+Editing the Config.tcl file
+![image](https://github.com/user-attachments/assets/f7bb750b-4a56-4973-bb66-c9ab410cd6aa)
+
+
+Successfully run synthesis
+![image](https://github.com/user-attachments/assets/7937a0e2-d3f5-483e-b784-6489fd0012fe)
+
+Noteing down values
+![image](https://github.com/user-attachments/assets/a491f0e7-ff8d-47fe-ab06-e565e180eeba)
+
+![image](https://github.com/user-attachments/assets/a350b25c-a4c2-4bd8-91b5-d69fc06f52ce)
+
+Re running synthesis
+![image](https://github.com/user-attachments/assets/e55ded37-a68b-4180-a9ec-2b022223d960)
+
+![image](https://github.com/user-attachments/assets/306cd0c3-3b43-4ee9-b438-1b39c28b378e)
+
+Sucessfully run synthesis and placement
+![image](https://github.com/user-attachments/assets/ad924db7-e92f-43d5-be94-633283b918e2)
+
+
+
+
 </details>
