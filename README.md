@@ -330,6 +330,8 @@ Re running synthesis
 Sucessfully run synthesis and placement
 ![image](https://github.com/user-attachments/assets/ad924db7-e92f-43d5-be94-633283b918e2)
 
+Opening magic
+![image](https://github.com/user-attachments/assets/c2f4399e-a1aa-4119-babe-c8bdb0af6701)
 
 
 
