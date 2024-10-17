@@ -287,8 +287,9 @@ magic -d XR &
 
 </details>
 
+###Day 4
 <details>
-<Summary> Day 4 </Summary>
+<Summary> Lab </Summary>
 
 ```
 cd Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign
