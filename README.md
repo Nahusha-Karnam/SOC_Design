@@ -365,4 +365,23 @@ Reducing slack
 
 
 
+![image](https://github.com/user-attachments/assets/7e56e4d0-7eef-4c4f-a200-5b18c7daef03)
+
+
+![image](https://github.com/user-attachments/assets/60d66fc2-2825-4905-85ba-e4dcb2cb2e5f)
+
+
+![image](https://github.com/user-attachments/assets/5ecf558c-3c93-4cd7-b209-4ece6fafbdcd)
+
+Reduced slack to -22.6173
+
+![image](https://github.com/user-attachments/assets/3ee2d6bf-13f3-4716-a730-e13c17a6d665)
+
+
+Writing verilog
+![image](https://github.com/user-attachments/assets/1faf57a1-6ff3-4c24-ac1a-f404cf86059a)
+
+
+
+
 </details>
