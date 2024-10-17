@@ -287,7 +287,7 @@ magic -d XR &
 
 </details>
 
-###Day 4
+### Day 4
 <details>
 <Summary> Lab </Summary>
 
