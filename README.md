@@ -333,6 +333,36 @@ Sucessfully run synthesis and placement
 Opening magic
 ![image](https://github.com/user-attachments/assets/c2f4399e-a1aa-4119-babe-c8bdb0af6701)
 
+Expanding the vsd_inv
+![image](https://github.com/user-attachments/assets/d5f539fa-af7e-4e91-8c91-894f38b12059)
+
+Creating pre_sta.conf file
+![image](https://github.com/user-attachments/assets/0db06bff-ad0d-4165-86b7-822a9863ffb2)
+
+Creating my_base.sdc file
+![image](https://github.com/user-attachments/assets/9fa9e74a-760f-4fe9-be22-8db33a9f13bc)
+
+```
+cd Desktop/work/tools/openlane_working_dir/openlane
+
+```
+
+```
+sta pre_sta.conf
+```
+
+![image](https://github.com/user-attachments/assets/24fe18d5-5277-45f0-865f-fc288650abf0)
+
+![image](https://github.com/user-attachments/assets/ba1d4b93-f206-4745-bdb4-c738fc8da493)
+
+![image](https://github.com/user-attachments/assets/ea531b54-2e24-423e-8d0a-6c0197992df6)
+
+![image](https://github.com/user-attachments/assets/b9780d37-cebd-486d-8c30-50d7cb2e30a7)
+
+
+Reducing slack
+![image](https://github.com/user-attachments/assets/623f58d5-04d7-41d3-84b5-5e5f530ade6a)
+
 
 
 </details>
