@@ -298,6 +298,9 @@ Resolving nwell error
 </details>
 
 ### Day 4
+#### Pre-layout timing analysis and Clock Tree Synthesis
+
+
 <details>
 <Summary> Lab </Summary>
 
@@ -851,6 +854,7 @@ Running CTS again
 </details>
 
 ### Day 5
+#### Final steps for RTL2GDS
 
 <details>
 <summary> Lab </summary>
