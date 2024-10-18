@@ -388,6 +388,8 @@ Clock tree synthesis done
 Post CTS timing analysis
 ![image](https://github.com/user-attachments/assets/7a641653-c750-46a5-917f-57cbaa5473ae)
 
+Running CTS again
+![image](https://github.com/user-attachments/assets/5f725795-5200-4052-9861-ebd209194d92)
 
 
 
