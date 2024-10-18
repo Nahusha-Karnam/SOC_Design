@@ -400,7 +400,24 @@ Post CTS timing analysis
 
 Running CTS again
 ![image](https://github.com/user-attachments/assets/5f725795-5200-4052-9861-ebd209194d92)
+</details>
 
+### Day 5
+
+<details>
+<summary> Lab </summary>
+
+Generated PDN
+![image](https://github.com/user-attachments/assets/0b4f0bde-6a74-4f0e-b445-1ad0f04728f5)
+
+Finished routing
+![image](https://github.com/user-attachments/assets/56780b2a-612e-4eac-9ee9-45f890b96f1b)
+
+No DRC violations
+![image](https://github.com/user-attachments/assets/3c863042-4d1c-4db9-8ea8-6e67e992f024)
+
+Extracting lef and def file
+![image](https://github.com/user-attachments/assets/bd6e8b55-7295-4dac-9a91-affc7be185cb)
 
 
 
