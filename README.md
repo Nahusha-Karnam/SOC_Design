@@ -320,32 +320,220 @@ grid 0.46um 0.34um 0.23um 0.17um
 
 ![image](https://github.com/user-attachments/assets/16ff1a7c-6424-4fac-98e4-0edf984244bf)
 
+```
+save sky130_vsdinv.mag
+
+```
+
+```
+magic -T sky130A.tech sky130_vsdinv.mag &
+```
+
+```
+lef write
+```
+
+```
+cp sky130_vsdinv.lef ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src/
+```
+
+```
+ls ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src/
+```
+
+```
+ls ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src/
+```
+
+```
+ls ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src/
+```
+
+for lef file
+```
+set ::env(LIB_SYNTH) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib"
+set ::env(LIB_FASTEST) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__fast.lib"
+set ::env(LIB_SLOWEST) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__slow.lib"
+set ::env(LIB_TYPICAL) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib"
+
+set ::env(EXTRA_LEFS) [glob $::env(OPENLANE_ROOT)/designs/$::env(DESIGN_NAME)/src/*.lef]
+```
 
 Editing the Config.tcl file
 ![image](https://github.com/user-attachments/assets/f7bb750b-4a56-4973-bb66-c9ab410cd6aa)
 
+```
+cd Desktop/work/tools/openlane_working_dir/openlane
 
+```
+
+```
+docker
+```
+
+```
+./flow.tcl -interactive
+```
+
+```
+package require openlane 0.9
+```
+
+
+```
+prep -design picorv32a
+```
+
+
+```
+set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+```
+
+```
+add_lefs -src $lefs
+```
+
+```
+run_synthesis
+```
 Successfully run synthesis
 ![image](https://github.com/user-attachments/assets/7937a0e2-d3f5-483e-b784-6489fd0012fe)
+
 
 Noteing down values
 ![image](https://github.com/user-attachments/assets/a491f0e7-ff8d-47fe-ab06-e565e180eeba)
 
 ![image](https://github.com/user-attachments/assets/a350b25c-a4c2-4bd8-91b5-d69fc06f52ce)
 
+
+```
+prep -design picorv32a -tag 16-10_13-08 -overwrite
+```
+
+```
+set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+```
+
+```
+add_lefs -src $lefs
+```
+
+```
+echo $::env(SYNTH_STRATEGY)
+```
+
+```
+set ::env(SYNTH_STRATEGY) "DELAY 3"
+```
+
+```
+echo $::env(SYNTH_BUFFERING)
+```
+
+```
+echo $::env(SYNTH_SIZING)
+```
+
+```
+set ::env(SYNTH_SIZING) 1
+```
+
+```
+echo $::env(SYNTH_DRIVING_CELL)
+```
+
+```
+run_synthesis
+```
+
 Re running synthesis
 ![image](https://github.com/user-attachments/assets/e55ded37-a68b-4180-a9ec-2b022223d960)
 
 ![image](https://github.com/user-attachments/assets/306cd0c3-3b43-4ee9-b438-1b39c28b378e)
 
+```
+run_floorplan
+```
+
+```
+init_floorplan
+```
+
+```
+place_io
+```
+
+```
+tap_decap_or
+```
+
+```
+run_placement
+```
+
 Sucessfully run synthesis and placement
 ![image](https://github.com/user-attachments/assets/ad924db7-e92f-43d5-be94-633283b918e2)
+
+```
+cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/16-10_13-08/results/placement/
+
+```
+
+```
+magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &
+```
+
 
 Opening magic
 ![image](https://github.com/user-attachments/assets/c2f4399e-a1aa-4119-babe-c8bdb0af6701)
 
 Expanding the vsd_inv
 ![image](https://github.com/user-attachments/assets/d5f539fa-af7e-4e91-8c91-894f38b12059)
+
+```
+prep -design picorv32a -tag 16-10_13-08 -overwrite
+```
+
+```
+set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+```
+
+```
+add_lefs -src $lefs
+```
+
+```
+echo $::env(SYNTH_STRATEGY)
+```
+
+```
+set ::env(SYNTH_STRATEGY) "DELAY 3"
+```
+
+```
+echo $::env(SYNTH_BUFFERING)
+```
+
+```
+echo $::env(SYNTH_SIZING)
+```
+
+```
+set ::env(SYNTH_SIZING) 1
+```
+
+```
+echo $::env(SYNTH_DRIVING_CELL)
+```
+
+```
+run_synthesis
+```
+
+
+
+
+
 
 Creating pre_sta.conf file
 ![image](https://github.com/user-attachments/assets/0db06bff-ad0d-4165-86b7-822a9863ffb2)
@@ -374,29 +562,289 @@ sta pre_sta.conf
 Reducing slack
 ![image](https://github.com/user-attachments/assets/623f58d5-04d7-41d3-84b5-5e5f530ade6a)
 
+```
+report_net -connections _11672_
 
+```
+
+```
+help replace_cell
+```
+
+```
+replace_cell _14510_ sky130_fd_sc_hd__or3_4
+```
+
+```
+report_checks -fields {net cap slew input_pins} -digits 4
+```
 
 ![image](https://github.com/user-attachments/assets/7e56e4d0-7eef-4c4f-a200-5b18c7daef03)
 
+```
+report_net -connections _11675_
+
+```
+
+```
+replace_cell _14514_ sky130_fd_sc_hd__or3_4
+
+```
+
+```
+report_checks -fields {net cap slew input_pins} -digits 4
+
+```
 
 ![image](https://github.com/user-attachments/assets/60d66fc2-2825-4905-85ba-e4dcb2cb2e5f)
 
+```
+report_net -connections _11643_
+
+```
+
+```
+replace_cell _14481_ sky130_fd_sc_hd__or4_4
+
+```
+
+```
+report_checks -fields {net cap slew input_pins} -digits 4
+
+```
 
 ![image](https://github.com/user-attachments/assets/5ecf558c-3c93-4cd7-b209-4ece6fafbdcd)
+
+```
+report_net -connections _11668_
+
+```
+
+```
+replace_cell _14506_ sky130_fd_sc_hd__or4_4
+
+```
+
+```
+report_checks -fields {net cap slew input_pins} -digits 4
+
+```
+
+
 
 Reduced slack to -22.6173
 
 ![image](https://github.com/user-attachments/assets/3ee2d6bf-13f3-4716-a730-e13c17a6d665)
 
+```
+cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/16-10_13-08/results/synthesis/
+
+```
+
+```
+ls
+```
+
+```
+cp picorv32a.synthesis.v picorv32a.synthesis_old.v
+```
+
+```
+ls
+```
+
+```
+help write_verilog
+
+```
+
+```
+write_verilog /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/25-03_18-52/results/synthesis/picorv32a.synthesis.v
+```
+
+```
+exit
+```
+
 
 Writing verilog
 ![image](https://github.com/user-attachments/assets/1faf57a1-6ff3-4c24-ac1a-f404cf86059a)
 
+
+```
+prep -design picorv32a -tag 16-10_13-08 -overwrite
+```
+
+```
+set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+```
+
+```
+add_lefs -src $lefs
+```
+
+```
+echo $::env(SYNTH_STRATEGY)
+```
+
+```
+set ::env(SYNTH_STRATEGY) "DELAY 3"
+```
+
+```
+echo $::env(SYNTH_BUFFERING)
+```
+
+```
+echo $::env(SYNTH_SIZING)
+```
+
+```
+set ::env(SYNTH_SIZING) 1
+```
+
+```
+echo $::env(SYNTH_DRIVING_CELL)
+```
+
+```
+run_synthesis
+```
+
 Clock tree synthesis done
 ![image](https://github.com/user-attachments/assets/f0ea2fda-a0ac-4388-b045-62cd0924f0cc)
 
+
+```
+openroad
+```
+
+```
+read_lef /openLANE_flow/designs/picorv32a/runs/24-03_10-03/tmp/merged.lef
+```
+
+```
+read_def /openLANE_flow/designs/picorv32a/runs/24-03_10-03/results/cts/picorv32a.cts.def
+```
+
+```
+write_db pico_cts.db
+```
+
+```
+read_db pico_cts.db
+
+```
+
+```
+read_verilog /openLANE_flow/designs/picorv32a/runs/24-03_10-03/results/synthesis/picorv32a.synthesis_cts.v
+```
+```
+read_liberty $::env(LIB_SYNTH_COMPLETE)
+```
+```
+link_design picorv32a
+```
+
+```
+read_sdc /openLANE_flow/designs/picorv32a/src/my_base.sdc
+
+```
+```
+set_propagated_clock [all_clocks]
+```
+```
+help report_checks
+
+```
+```
+report_checks -path_delay min_max -fields {slew trans net cap input_pins} -format full_clock_expanded -digits 4
+```
+```
+exit
+```
+
 Post CTS timing analysis
 ![image](https://github.com/user-attachments/assets/7a641653-c750-46a5-917f-57cbaa5473ae)
+
+
+```
+echo $::env(CTS_CLK_BUFFER_LIST)
+```
+```
+set ::env(CTS_CLK_BUFFER_LIST) [lreplace $::env(CTS_CLK_BUFFER_LIST) 0 0]
+```
+```
+echo $::env(CTS_CLK_BUFFER_LIST)
+```
+```
+echo $::env(CURRENT_DEF)
+```
+```
+set ::env(CURRENT_DEF) /openLANE_flow/designs/picorv32a/runs/24-03_10-03/results/placement/picorv32a.placement.def
+```
+```
+run_cts
+```
+```
+echo $::env(CTS_CLK_BUFFER_LIST)
+```
+```
+openroad
+```
+```
+read_lef /openLANE_flow/designs/picorv32a/runs/24-03_10-03/tmp/merged.lef
+```
+```
+read_def /openLANE_flow/designs/picorv32a/runs/24-03_10-03/results/cts/picorv32a.cts.def
+```
+```
+write_db pico_cts1.db
+```
+```
+openROAD
+
+```
+```
+read_db pico_cts.db
+```
+```
+read_verilog /openLANE_flow/designs/picorv32a/runs/24-03_10-03/results/synthesis/picorv32a.synthesis_cts.v
+```
+```
+read_liberty $::env(LIB_SYNTH_COMPLETE)
+```
+```
+link_design picorv32a
+```
+```
+read_sdc /openLANE_flow/designs/picorv32a/src/my_base.sdc
+```
+```
+set_propagated_clock [all_clocks]
+```
+```
+report_checks -path_delay min_max -fields {slew trans net cap input_pins} -format full_clock_expanded -digits 4
+```
+```
+report_clock_skew -hold
+```
+```
+report_clock_skew -setup
+```
+```
+exit
+```
+```
+echo $::env(CTS_CLK_BUFFER_LIST)
+```
+```
+set ::env(CTS_CLK_BUFFER_LIST) [linsert $::env(CTS_CLK_BUFFER_LIST) 0 sky130_fd_sc_hd__clkbuf_1]
+
+```
+```
+echo $::env(CTS_CLK_BUFFER_LIST)
+```
 
 Running CTS again
 ![image](https://github.com/user-attachments/assets/5f725795-5200-4052-9861-ebd209194d92)
@@ -406,21 +854,154 @@ Running CTS again
 
 <details>
 <summary> Lab </summary>
+  
+```
+cd Desktop/work/tools/openlane_working_dir/openlane
+```
+```
+docker
+```
+```
+./flow.tcl -interactive
+
+```
+```
+package require openlane 0.9
+```
+
+
+```
+prep -design picorv32a
+```
+```
+set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+
+```
+```
+
+add_lefs -src $lefs
+
+```
+```
+set ::env(SYNTH_STRATEGY) "DELAY 3"
+```
+```
+set ::env(SYNTH_SIZING) 1
+```
+```
+run_synthesis
+```
+```
+init_floorplan
+
+```
+```
+place_io
+
+```
+```
+tap_decap_or
+```
+```
+run_placement
+```
+```
+unset ::env(LIB_CTS)
+```
+```
+run_cts
+
+```
+```
+gen_pdn 
+
+```
+
+
+
 
 Generated PDN
 ![image](https://github.com/user-attachments/assets/0b4f0bde-6a74-4f0e-b445-1ad0f04728f5)
 
+
+```
+run_routing
+```
+
+
 Finished routing
 ![image](https://github.com/user-attachments/assets/56780b2a-612e-4eac-9ee9-45f890b96f1b)
 
-![image](https://github.com/user-attachments/assets/7a662edb-becc-4ea4-9a77-4e0ef30c6a7a)
+```
+cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/16-10_13-08/results/routing/
+```
 
+```
+magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.def &
+
+```
+
+![image](https://github.com/user-attachments/assets/7a662edb-becc-4ea4-9a77-4e0ef30c6a7a)
 
 No DRC violations
 ![image](https://github.com/user-attachments/assets/3c863042-4d1c-4db9-8ea8-6e67e992f024)
 
+```
+cd Desktop/work/tools/openlane_working_dir/openlane/scripts/spef_extractor
+
+```
+
+```
+python3 main.py --def_file /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/16-10_13-08/results/routing/picorv32a.def
+--lef_file /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/16-10_13-08/tmp/merged.lef 
+
+```
+
 Extracting lef and def file
 ![image](https://github.com/user-attachments/assets/bd6e8b55-7295-4dac-9a91-affc7be185cb)
+
+
+```
+openroad
+```
+```
+read_lef /openLANE_flow/designs/picorv32a/runs/16-10_13-08/tmp/merged.lef
+```
+```
+read_def /openLANE_flow/designs/picorv32a/runs/16-10_13-08/results/routing/picorv32a.def
+```
+```
+write_db pico_route.db
+```
+```
+read_db pico_route.db
+```
+```
+read_verilog /openLANE_flow/designs/picorv32a/runs/16-10_13-08/results/synthesis/picorv32a.synthesis_preroute.v
+```
+```
+read_liberty $::env(LIB_SYNTH_COMPLETE)
+```
+```
+link_design picorv32a
+```
+```
+read_sdc /openLANE_flow/designs/picorv32a/src/my_base.sdc
+```
+```
+set_propagated_clock [all_clocks]
+```
+```
+read_spef /openLANE_flow/designs/picorv32a/runs/16-10_13-08/results/routing/picorv32a.spef
+```
+```
+report_checks -path_delay min_max -fields {slew trans net cap input_pins} -format full_clock_expanded -digits 4
+```
+```
+exit
+
+```
+
 
 Generating Report
 ![image](https://github.com/user-attachments/assets/7c035dac-5633-4582-9604-88bcba486dcb)
