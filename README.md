@@ -413,12 +413,19 @@ Generated PDN
 Finished routing
 ![image](https://github.com/user-attachments/assets/56780b2a-612e-4eac-9ee9-45f890b96f1b)
 
+![image](https://github.com/user-attachments/assets/7a662edb-becc-4ea4-9a77-4e0ef30c6a7a)
+
+
 No DRC violations
 ![image](https://github.com/user-attachments/assets/3c863042-4d1c-4db9-8ea8-6e67e992f024)
 
 Extracting lef and def file
 ![image](https://github.com/user-attachments/assets/bd6e8b55-7295-4dac-9a91-affc7be185cb)
 
+Generating Report
+![image](https://github.com/user-attachments/assets/7c035dac-5633-4582-9604-88bcba486dcb)
+
+![image](https://github.com/user-attachments/assets/4714c480-6d7b-4859-805a-f025d98e382e)
 
 
 </details>
