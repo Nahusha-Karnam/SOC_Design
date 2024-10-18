@@ -382,6 +382,13 @@ Reduced slack to -22.6173
 Writing verilog
 ![image](https://github.com/user-attachments/assets/1faf57a1-6ff3-4c24-ac1a-f404cf86059a)
 
+Clock tree synthesis done
+![image](https://github.com/user-attachments/assets/f0ea2fda-a0ac-4388-b045-62cd0924f0cc)
+
+Post CTS timing analysis
+![image](https://github.com/user-attachments/assets/7a641653-c750-46a5-917f-57cbaa5473ae)
+
+
 
 
 
