@@ -281,8 +281,18 @@ gvim .magicrc
 ```
 magic -d XR &
 ```
-
+Resolving poly.9 error
 ![image](https://github.com/user-attachments/assets/11c00987-9ce3-4243-bac6-4cd00ccbd0c4)
+
+Resolving difftap error
+![image](https://github.com/user-attachments/assets/8b83a6fa-5650-4265-b729-ed25d646917a)
+
+![image](https://github.com/user-attachments/assets/b7cba596-fe56-4784-a689-e9f4a680c731)
+
+Resolving nwell error
+![image](https://github.com/user-attachments/assets/a4513dd9-8dd5-4501-b506-21eeda0a7cc2)
+
+![image](https://github.com/user-attachments/assets/01b90e0c-9514-46b8-b64c-015903d46fdb)
 
 
 </details>
