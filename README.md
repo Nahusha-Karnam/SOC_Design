@@ -1021,3 +1021,5 @@ Generating Report
 * [Kunal Ghosh](https://github.com/kunalg123), Co-founder, VSD Corp. Pvt. Ltd.
 * [Nickson P Jose](https://github.com/nickson-jose), Physical Design Engineer, Intel Corporation.
 * [R. Timothy Edwards](https://github.com/RTimothyEdwards), Senior Vice President of Analog and Design, efabless Corporation.
+* [Fayiz Ferosh](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd)
+* [G R Vighneshwar](https://github.com/grVighneshwar/vsd-digital-soc)
